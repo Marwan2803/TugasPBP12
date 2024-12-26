@@ -1,69 +1,59 @@
 -- CreateTable
-CREATE TABLE `ligabelanda` (
+CREATE TABLE `actionMovies` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `nama` VARCHAR(50) NOT NULL,
-    `umur` INTEGER NOT NULL,
-    `posisi` VARCHAR(4) NOT NULL,
-    `NA` VARCHAR(50) NOT NULL,
-    `KA` VARCHAR(100) NOT NULL,
-    `KSI` VARCHAR(100) NOT NULL,
-    `harga` VARCHAR(100) NOT NULL,
+    `title` VARCHAR(100) NOT NULL,
+    `director` VARCHAR(50) NOT NULL,
+    `releaseYear` INTEGER NOT NULL,
+    `genre` VARCHAR(50) NOT NULL,
+    `rating` FLOAT NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
-CREATE TABLE `ligainggris` (
+CREATE TABLE `comedyMovies` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `nama` VARCHAR(50) NOT NULL,
-    `umur` INTEGER NOT NULL,
-    `posisi` VARCHAR(4) NOT NULL,
-    `NA` VARCHAR(50) NOT NULL,
-    `KA` VARCHAR(100) NOT NULL,
-    `KSI` VARCHAR(100) NOT NULL,
-    `harga` VARCHAR(100) NOT NULL,
+    `title` VARCHAR(100) NOT NULL,
+    `director` VARCHAR(50) NOT NULL,
+    `releaseYear` INTEGER NOT NULL,
+    `genre` VARCHAR(50) NOT NULL,
+    `rating` FLOAT NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
-CREATE TABLE `ligajerman` (
+CREATE TABLE `dramaMovies` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `nama` VARCHAR(50) NOT NULL,
-    `umur` INTEGER NOT NULL,
-    `posisi` VARCHAR(4) NOT NULL,
-    `NA` VARCHAR(50) NOT NULL,
-    `KA` VARCHAR(100) NOT NULL,
-    `KSI` VARCHAR(100) NOT NULL,
-    `harga` VARCHAR(100) NOT NULL,
+    `title` VARCHAR(100) NOT NULL,
+    `director` VARCHAR(50) NOT NULL,
+    `releaseYear` INTEGER NOT NULL,
+    `genre` VARCHAR(50) NOT NULL,
+    `rating` FLOAT NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
-CREATE TABLE `ligaprancis` (
+CREATE TABLE `horrorMovies` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `nama` VARCHAR(50) NOT NULL,
-    `umur` INTEGER NOT NULL,
-    `posisi` VARCHAR(4) NOT NULL,
-    `NA` VARCHAR(50) NOT NULL,
-    `KA` VARCHAR(100) NOT NULL,
-    `KSI` VARCHAR(100) NOT NULL,
-    `harga` VARCHAR(100) NOT NULL,
+    `title` VARCHAR(100) NOT NULL,
+    `director` VARCHAR(50) NOT NULL,
+    `releaseYear` INTEGER NOT NULL,
+    `genre` VARCHAR(50) NOT NULL,
+    `rating` FLOAT NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
-CREATE TABLE `ligaspanyol` (
+CREATE TABLE `sciFiMovies` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `nama` VARCHAR(50) NOT NULL,
-    `umur` INTEGER NOT NULL,
-    `posisi` VARCHAR(4) NOT NULL,
-    `NA` VARCHAR(50) NOT NULL,
-    `KA` VARCHAR(100) NOT NULL,
-    `KSI` VARCHAR(100) NOT NULL,
-    `harga` VARCHAR(100) NOT NULL,
+    `title` VARCHAR(100) NOT NULL,
+    `director` VARCHAR(50) NOT NULL,
+    `releaseYear` INTEGER NOT NULL,
+    `genre` VARCHAR(50) NOT NULL,
+    `rating` FLOAT NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
