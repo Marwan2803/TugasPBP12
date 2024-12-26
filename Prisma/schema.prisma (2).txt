@@ -13,57 +13,47 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model ligabelanda {
-  id     Int    @id @default(autoincrement())
-  nama   String @db.VarChar(50)
-  umur   Int
-  posisi String @db.VarChar(4)
-  NA     String @db.VarChar(50)
-  KA     String @db.VarChar(100)
-  KSI    String @db.VarChar(100)
-  harga  String @db.VarChar(100)
+model actionMovies {
+  id          Int     @id @default(autoincrement())
+  title       String  @db.VarChar(100)
+  director    String  @db.VarChar(50)
+  releaseYear Int
+  genre       String  @db.VarChar(50)
+  rating      Float
 }
 
-model ligainggris {
-  id     Int    @id @default(autoincrement())
-  nama   String @db.VarChar(50)
-  umur   Int
-  posisi String @db.VarChar(4)
-  NA     String @db.VarChar(50)
-  KA     String @db.VarChar(100)
-  KSI    String @db.VarChar(100)
-  harga  String @db.VarChar(100)
+model comedyMovies {
+  id          Int     @id @default(autoincrement())
+  title       String  @db.VarChar(100)
+  director    String  @db.VarChar(50)
+  releaseYear Int
+  genre       String  @db.VarChar(50)
+  rating      Float
 }
 
-model ligajerman {
-  id     Int    @id @default(autoincrement())
-  nama   String @db.VarChar(50)
-  umur   Int
-  posisi String @db.VarChar(4)
-  NA     String @db.VarChar(50)
-  KA     String @db.VarChar(100)
-  KSI    String @db.VarChar(100)
-  harga  String @db.VarChar(100)
+model dramaMovies {
+  id          Int     @id @default(autoincrement())
+  title       String  @db.VarChar(100)
+  director    String  @db.VarChar(50)
+  releaseYear Int
+  genre       String  @db.VarChar(50)
+  rating      Float
 }
 
-model ligaprancis {
-  id     Int    @id @default(autoincrement())
-  nama   String @db.VarChar(50)
-  umur   Int
-  posisi String @db.VarChar(4)
-  NA     String @db.VarChar(50)
-  KA     String @db.VarChar(100)
-  KSI    String @db.VarChar(100)
-  harga  String @db.VarChar(100)
+model horrorMovies {
+  id          Int     @id @default(autoincrement())
+  title       String  @db.VarChar(100)
+  director    String  @db.VarChar(50)
+  releaseYear Int
+  genre       String  @db.VarChar(50)
+  rating      Float
 }
 
-model ligaspanyol {
-  id     Int    @id @default(autoincrement())
-  nama   String @db.VarChar(50)
-  umur   Int
-  posisi String @db.VarChar(4)
-  NA     String @db.VarChar(50)
-  KA     String @db.VarChar(100)
-  KSI    String @db.VarChar(100)
-  harga  String @db.VarChar(100)
+model sciFiMovies {
+  id          Int     @id @default(autoincrement())
+  title       String  @db.VarChar(100)
+  director    String  @db.VarChar(50)
+  releaseYear Int
+  genre       String  @db.VarChar(50)
+  rating      Float
 }
